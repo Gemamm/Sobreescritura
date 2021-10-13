@@ -24,7 +24,13 @@ public class Test {
         Empleado S1;
         S1 = new Escritor(TipoEscritura.CLASICO, 1653.00, "Maria");
         System.out.println(S1.mostrarDetalles());
+        // down casting
         System.out.println(((Escritor)S1).getTipoEscritura().getDescripcion());
+        // down casting
+        Escritor escritor = (Escritor)S1;
+        escritor.getTipoEscritura();
+        
+        Empleado S2 = escritor;
     }
     
     public static void imprimir(Empleado emp){
