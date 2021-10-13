@@ -23,7 +23,8 @@ public class Gerente  extends Empleado{
         this.dpto = dpto;
     }
    
-    public String mostrarDetallesGerente(){
+   @Override
+    public String mostrarDetalles(){
        return super.mostrarDetalles() + "\tGerente: " +this.dpto;
        // System.out.println("Gerente: " +this.nombre + " , " +this.sueldo
        // +this.dpto);
